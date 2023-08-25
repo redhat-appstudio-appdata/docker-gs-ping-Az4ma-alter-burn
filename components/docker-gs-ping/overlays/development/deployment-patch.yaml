@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: docker-gs-ping
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/vbelouso-tenant/docker-gs-ping/docker-gs-ping@sha256:01bdca4cc61025ef77ee1a392db69d8d0e3b7817868fd620526476f43bf72121
+        name: container-image
+        resources: {}
+status: {}

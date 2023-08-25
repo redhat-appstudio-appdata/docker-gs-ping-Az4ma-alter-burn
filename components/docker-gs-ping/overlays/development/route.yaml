@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: docker-gs-ping
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: docker-gs-ping
+    app.kubernetes.io/part-of: docker-gs-ping
+  name: docker-gs-pingipgd
+spec:
+  port:
+    targetPort: 8080
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: docker-gs-ping
+    weight: 100
+status: {}
