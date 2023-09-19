@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: docker-gs-ping
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/vbelouso-tenant/docker-gs-ping/docker-gs-ping@sha256:01bdca4cc61025ef77ee1a392db69d8d0e3b7817868fd620526476f43bf72121
+      - image: quay.io/redhat-user-workloads/vbelouso-tenant/docker-gs-ping/docker-gs-ping@sha256:0b9e0eccf1aa026738cc215917edbb98c163f2fb7199d554d287ddf9ea3bb67e
         imagePullPolicy: Always
         name: container-image
         ports:
